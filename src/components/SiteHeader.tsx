@@ -12,9 +12,9 @@ export function SiteHeader() {
           RoadWatch
         </Link>
         <nav className="flex gap-1 text-sm font-medium">
-          <Link to="/" className="rounded-md px-3 py-1.5 hover:bg-white/10" activeOptions={{ exact: true }} activeProps={{ className: "text-primary" }}>Report</Link>
-          <Link to="/track" className="rounded-md px-3 py-1.5 hover:bg-white/10" activeProps={{ className: "text-primary" }}>Track</Link>
-          <Link to="/admin" className="rounded-md px-3 py-1.5 hover:bg-white/10" activeProps={{ className: "text-primary" }}>Admin</Link>
+          <Link to="/" className="rounded-md px-3 py-1.5 hover:bg-asphalt-foreground/10" activeOptions={{ exact: true }} activeProps={{ className: "text-primary" }}>Report</Link>
+          <Link to="/track" className="rounded-md px-3 py-1.5 hover:bg-asphalt-foreground/10" activeProps={{ className: "text-primary" }}>Track</Link>
+          <Link to="/admin" className="rounded-md px-3 py-1.5 hover:bg-asphalt-foreground/10" activeProps={{ className: "text-primary" }}>Admin</Link>
         </nav>
       </div>
       <div className="hazard-stripe h-1.5" />
