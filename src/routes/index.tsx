@@ -87,7 +87,7 @@ function ReportPage() {
     const parsed = schema.safeParse(form);
     const errs: Record<string, string> = {};
     if (!parsed.success) parsed.error.issues.forEach((i) => (errs[String(i.path[0])] = i.message));
-    if (!loc) errs.location = "Add the location using GPS or by tapping the map";
+    if (!loc) errs["location"] = "Add the location using GPS or by tapping the map";
     setErrors(errs);
     if (Object.keys(errs).length) { toast.error("Please fix the highlighted fields"); return; }
 
