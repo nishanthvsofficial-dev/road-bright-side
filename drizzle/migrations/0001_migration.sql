@@ -1,0 +1,2 @@
+drop policy "Anyone can view complaint photos" on storage.objects;
+create policy "Admins view complaint photos" on storage.objects for select to authenticated using (bucket_id = 'complaint-photos' and public.has_role(auth.uid(), 'admin'));
